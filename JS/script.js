@@ -10,6 +10,9 @@ async function search(){
     document.querySelector('.a h3').innerHTML= `Temp = ${data.main.temp} ℃`
 
    document.querySelector('.a h4').innerHTML = `City = ${data.name}`
+    document.querySelector('.a h4.time').innerHTML = `Time-Zone = ${data.timezone}`
+     document.querySelector('.a h4.count').innerHTML = `City = ${data.sys.country}`
+
 
     // console.log(res)
 }
