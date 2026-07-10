@@ -2,7 +2,7 @@ async function search(){
     let a = document.getElementById("city").value;
     // console.log(a)
 
-    const key=''
+const key = API_KEY;
 const url = `https://api.openweathermap.org/data/2.5/weather?q=${a}&appid=${key}&units=metric`;
     let res = await fetch(url)
     let data= await res.json();
