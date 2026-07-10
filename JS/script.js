@@ -3,7 +3,7 @@ async function search(){
     // console.log(a)
 
     const key=''
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${a}&appid=${key}&units = metric`
+const url = `https://api.openweathermap.org/data/2.5/weather?q=${a}&appid=${key}&units=metric`;
     let res = await fetch(url)
     let data= await res.json();
     console.log(data);
